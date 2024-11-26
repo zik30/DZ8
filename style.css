@@ -1,0 +1,78 @@
+canvas{
+    display: block;
+    margin: 0 auto;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.modal{
+    width: 500px;
+    height: 300px;
+    position: absolute;
+    background-color: #ffffff;
+    border: 10px solid #5eff00;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    align-items: center;
+    flex-direction: column;
+
+}
+h2{
+    text-align: center;
+    font-size: 60px;
+    font-weight: 700;
+    color: #ffffff;
+    background-color: #5eff00;
+    width: 100%;
+    margin: 0;
+}
+h1{
+    font-size: 70px;
+    color: #ff0900;
+    margin: 0;
+}
+button{
+    background-color: #5eff00;
+    border: none;
+    color: white;
+    width: 300px;
+    height: 90px;
+    font-size: 36px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.open{
+    opacity: 1;
+    animation: show 0.5s;
+}
+@keyframes show{
+    from{
+        opacity: 0;
+        transform: scale(0);
+    }
+    to{
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.close{
+    opacity: 0;
+    animation: hide 0.5s;
+}
+@keyframes hide{
+    from{
+        opacity: 1;
+        transform: scale(1);
+    }
+    to{
+        opacity: 0;
+        transform: scale(0);
+    }
+}
